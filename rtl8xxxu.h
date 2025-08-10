@@ -13,6 +13,14 @@
 #include <linux/leds.h>
 #endif
 
+#ifndef fallthrough
+#define fallthrough /* fall through */
+#endif
+
+#ifndef IEEE80211_AMPDU_TX_START_IMMEDIATE
+#define IEEE80211_AMPDU_TX_START_IMMEDIATE IEEE80211_AMPDU_TX_START
+#endif
+
 #define RTL8XXXU_DEBUG_REG_WRITE	0x01
 #define RTL8XXXU_DEBUG_REG_READ		0x02
 #define RTL8XXXU_DEBUG_RFREG_WRITE	0x04
