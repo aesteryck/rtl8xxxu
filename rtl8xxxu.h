@@ -9,6 +9,8 @@
 #include <linux/bitfield.h>
 #include <linux/average.h>
 #include <linux/version.h>
+#include <linux/usb.h>
+#include <net/mac80211.h>
 #if LINUX_VERSION_CODE < KERNEL_VERSION(5, 14, 0)
 #include <linux/leds.h>
 #endif
