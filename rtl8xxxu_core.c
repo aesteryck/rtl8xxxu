@@ -6902,7 +6902,7 @@ static void rtl8xxxu_switch_ports(struct rtl8xxxu_priv *priv)
 	/* write bcn ctl */
 	rtl8xxxu_write8(priv, REG_BEACON_CTRL, bcn_ctrl_1);
 	rtl8xxxu_write8(priv, REG_BEACON_CTRL_1, bcn_ctrl);
-	swap(priv->vifs[0], priv->vifs[1];
+	swap(priv->vifs[0], priv->vifs[1]);
 
 	/* priv->vifs[0] is NULL here, based on how this function is currently
 	 * called from rtl8xxxu_add_interface().
@@ -7695,7 +7695,7 @@ error_out:
 	return ret;
 }
 
-static void rtl8xxxu_stop(struct ieee80211_hw *hw, bool suspend)
+static void rtl8xxxu_stop(struct ieee80211_hw *hw)
 {
 	struct rtl8xxxu_priv *priv = hw->priv;
 	unsigned long flags;
